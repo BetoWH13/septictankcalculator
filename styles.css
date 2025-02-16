@@ -1,0 +1,89 @@
+body {
+    background-color: #f0f8ff;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+}
+
+.calculator-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.btn-calculate {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.result-box {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #e8f4fc;
+    border-radius: 8px;
+    display: none;
+}
+
+.disclaimer {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+}
+
+.error-message {
+    font-size: 0.9rem;
+}
+
+.calculation-details {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+}
+
+.calculation-details h5 {
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    margin-top: 3rem;
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+}
+
+.legal-links a {
+    color: #2c3e50;
+    transition: opacity 0.2s;
+}
+
+.legal-links a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+@media (max-width: 576px) {
+    .calculator-card {
+        padding: 1.5rem;
+    }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Septic Tank Size Calculator</title>
+    <meta name="description" content="Professional septic tank size calculator for homeowners and contractors. Get EPA-compliant recommendations based on bedrooms, bathrooms, and regional factors.">
+    <meta name="keywords" content="septic tank calculator, septic system sizing, wastewater treatment, home plumbing, septic maintenance">
+    <meta property="og:title" content="Septic Tank Size Calculator | septictank.info">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://septictank.info">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Calculator",
+        "name": "Septic Tank Size Calculator",
+        "description": "EPA-compliant septic system sizing tool",
+        "url": "https://septictank.info",
+        "operatingSystem": "All",
+        "applicationCategory": "Utilities"
+    }
+    </script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Septic Tank Size Calculator</h1>
+        
+        <div class="calculator-card">
+            <div class="form-group">
+                <label for="bedrooms">Number of Bedrooms:</label>
+                <input type="number" id="bedrooms" class="form-control" min="1" value="3">
+                <div id="bedrooms-error" class="error"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="bathrooms">Number of Bathrooms:</label>
+                <input type="number" id="bathrooms" class="form-control" min="1" value="2">
+                <div id="bathrooms-error" class="error"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="occupancy">Average Daily Occupancy:</label>
+                <input type="number" id="occupancy" class="form-control" min="1" value="4">
+                <div id="occupancy-error" class="error"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="region">Region:</label>
+                <select id="region" class="form-select">
+                    <option value="default">Select Region</option>
+                    <option value="northeast">Northeast</option>
+                    <option value="south">Southern States</option>
+                    <option value="midwest">Midwest</option>
+                    <option value="west">Western States</option>
+                    <option value="pacific-northwest">Pacific Northwest</option>
+                    <option value="southwest">Southwest</option>
+                    <option value="gulf-coast">Gulf Coast</option>
+                    <option value="atlantic-coast">Atlantic Coast</option>
+                </select>
+                <div id="region-error" class="error"></div>
+            </div>
+            
+            <div class="button-group mb-3">
+                <button onclick="calculateTankSize()" class="btn btn-primary">Calculate</button>
+                <button onclick="resetForm()" class="btn btn-outline-secondary">Reset</button>
+            </div>
+            
+            <div id="result" class="result-box"></div>
+        </div>
+        
+        <div class="disclaimer mt-4">
+            * Calculations based on standard industry guidelines. Always consult with a licensed professional.
+        </div>
+    </div>
+
+    <footer class="mt-5 py-4 border-top">
+        <div class="legal-links">
+            <a href="/tos.html">Terms of Service</a> | 
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/affiliate.html">Affiliate Disclosure</a>
+        </div>
+        <div class="domain-info mt-2 text-muted">
+            2025 septictank.info - Advisory calculations only
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
