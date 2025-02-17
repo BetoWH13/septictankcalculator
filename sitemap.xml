@@ -6,5 +6,47 @@
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
-    <!-- Add other pages -->
+    <url>
+        <loc>https://septictank.info/blog.html</loc>
+        <lastmod>2025-02-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://septictank.info/contact.html</loc>
+        <lastmod>2025-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://septictank.info/privacy.html</loc>
+        <lastmod>2025-02-16</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <!-- Blog Posts -->
+    <url>
+        <loc>https://septictank.info/blog/septic-tank-inspection.html</loc>
+        <lastmod>2025-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://septictank.info/blog/septic-tank-size-needs.html</loc>
+        <lastmod>2025-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://septictank.info/blog/septic-tank-maintenance-tips.html</loc>
+        <lastmod>2025-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://septictank.info/blog/septic-tank-installation-guide.html</loc>
+        <lastmod>2025-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>

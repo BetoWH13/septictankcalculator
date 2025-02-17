@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /blog/
+Allow: /contact.html
+Allow: /privacy.html
+
+# Sitemap location
+Sitemap: https://septictank.info/sitemap.xml
